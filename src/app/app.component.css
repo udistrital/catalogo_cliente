@@ -1,0 +1,74 @@
+/*Estilos para las cards contenedoras de aplicaciones*/
+.container-aplicativos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    box-shadow: 3px 5px 33px#888888;
+    border-radius: 10px;
+    background: #F6F6F6;
+    flex-shrink: 0;
+    align-items: center; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+    margin-top: 20px;
+}
+
+.card-text-container{
+    width: 50%;
+}
+
+.card-text-app-container{
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.card-imageContainer{
+    object-fit: cover;
+    margin: 0;
+}
+
+.card-title{
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+
+/*Estilos para las cards de las aplicaciones*/
+.card-app-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card-app{
+    box-shadow: 3px 5px 33px#888888;
+    border-radius: 10px;
+    background: #F6F6F6;
+    flex-shrink: 0;
+    align-items: center; 
+    display: flex;
+    flex-wrap: wrap;
+    transition: 300ms;
+    justify-content: center;
+    width: 20%;
+    margin: 20px;
+}
+.card-app:hover 
+{
+    transform: scale(1.01);
+}
+
+.card-app-imageContainer{
+    object-fit: cover;
+    margin: 0;
+}
+

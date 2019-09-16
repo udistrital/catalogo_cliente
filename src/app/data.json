@@ -1,0 +1,99 @@
+{
+    "categorias":[
+        {
+            "nombre": "Gestion Administrativa",
+            "aplicaciones":[
+                {
+                    "nombre": "AGORA",
+                    "url": "www.google.com",
+                    "estilo": "agora"
+                },
+                {
+                    "nombre": "ARGO",
+                    "url": "www.google.com",
+                    "estilo": "argo"
+                },
+                {
+                    "nombre": "ARKA",
+                    "url": "www.google.com",
+                    "estilo": "arka"
+                },
+                {
+                    "nombre": "CUMPLIDOS",
+                    "url": "www.google.com",
+                    "estilo": "cumplidos"
+                },
+                {
+                    "nombre": "RESOLUCIONES",
+                    "url": "www.google.com",
+                    "estilo": "resoluciones"
+                },
+                {
+                    "nombre": "OIKOS",
+                    "url": "www.google.com",
+                    "estilo": "oikos"
+                },
+                {
+                    "nombre": "SISIFO",
+                    "url": "www.google.com",
+                    "estilo": "sisifo"
+                },
+                {
+                    "nombre": "TEMIS",
+                    "url": "www.google.com",
+                    "estilo": "temis"
+                }
+            ]
+        },
+        {
+            "nombre": "Gestion Academica",
+            "aplicaciones":[
+                {
+                    "nombre": "JANO",
+                    "url": "www.google.com",
+                    "estilo": "jano"
+                },
+                {
+                    "nombre": "KYRON",
+                    "url": "www.google.com",
+                    "estilo": "kyron"
+                },
+                {
+                    "nombre": "POLUX",
+                    "url": "www.google.com",
+                    "estilo": "polux"
+                },
+                {
+                    "nombre": "SGA",
+                    "url": "www.google.com",
+                    "estilo": "sga"
+                }
+            ]
+        },
+        {
+            "nombre": "Gestion Financiera",
+            "aplicaciones":[
+                {
+                    "nombre": "KRONOS",
+                    "url": "www.google.com",
+                    "estilo": "kronos"
+                },
+                {
+                    "nombre": "TITAN",
+                    "url": "www.google.com",
+                    "estilo": "titan"
+                }
+            ]
+        },
+        {
+            "nombre": "Voto Electrónico",
+            "aplicaciones":[
+                {
+                    "nombre": "PERSEO",
+                    "url": "www.google.com",
+                    "estilo": "perseo"
+                }
+            ]
+        }
+    ]
+}
