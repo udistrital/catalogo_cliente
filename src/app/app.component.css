@@ -1,4 +1,8 @@
 /*Estilos para las cards contenedoras de aplicaciones*/
+.delimiter{
+    width: 95%;
+    border: 1px solid;
+}
 .container-aplicativos{
     width: 100%;
     display: flex;
@@ -26,7 +30,7 @@
 .card-text-app-container{
     width: 100%;
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 30px;
 }
 
 .card-imageContainer{
@@ -35,7 +39,7 @@
 }
 
 .card-title{
-    font-size: 30px;
+    font-size: 25px;
     margin-top: 0px;
     margin-bottom: 10px;
 }
@@ -70,5 +74,58 @@
 .card-app-imageContainer{
     object-fit: cover;
     margin: 0;
+}
+
+.card-app-image{
+    width: 135px;
+}
+
+@media screen and (max-width: 1023px){
+    .card-app{
+        width: 15%;
+    }
+    .card-app-image{
+        width: 75px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .card-title{
+        font-size: 20px;
+    }
+    .card-app{
+        width: 30%;
+    }
+    .card-app-image{
+        width: 75px;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .card-imageContainer{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .card-image{
+        width: 111px;
+    }
+
+    .card-text-container{
+        width: 38%;
+        margin-top: 8px;
+    }
+
+    .card-title{
+        font-size: 15px;
+    }
+
+    .card-app{
+        width: 60%;
+    }
+    .card-app-image{
+        width: 100px;
+    }
 }
 

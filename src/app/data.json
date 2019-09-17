@@ -2,6 +2,7 @@
     "categorias":[
         {
             "nombre": "Gestion Administrativa",
+            "color": "#8E2825",
             "aplicaciones":[
                 {
                     "nombre": "AGORA",
@@ -47,6 +48,7 @@
         },
         {
             "nombre": "Gestion Academica",
+            "color": "#839EB1",
             "aplicaciones":[
                 {
                     "nombre": "JANO",
@@ -72,6 +74,7 @@
         },
         {
             "nombre": "Gestion Financiera",
+            "color": "#E8E1C5",
             "aplicaciones":[
                 {
                     "nombre": "KRONOS",
@@ -87,6 +90,7 @@
         },
         {
             "nombre": "Voto Electrónico",
+            "color": "#A0AE91",
             "aplicaciones":[
                 {
                     "nombre": "PERSEO",
