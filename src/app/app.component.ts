@@ -8,4 +8,9 @@ import data from './data.json';
 })
 export class AppComponent {
   data:any = data;
+
+  redirect(link) {
+    window.open(link, '_blank');
+  }
+  
 }

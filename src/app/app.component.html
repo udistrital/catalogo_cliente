@@ -15,10 +15,10 @@
       </div>
       <div class="delimiter" [ngStyle]="{'border-color': item.color}"></div>
       <div class="card-app-container">
-        <article *ngFor="let item of data.categorias[i].aplicaciones; let i = index" class="card-app">
+        <article *ngFor="let item of data.categorias[i].aplicaciones; let i = index" class="card-app" (click)="redirect(item.url)">
             <figure class="card-app-imageContainer">
-                <img src="https://rita.udistrital.edu.co/images/logo_horizontal.png"
-                class="card-app-image" alt="hola"
+                <img src="//:0"
+                class="menu-app" [id]="item.estilo" [alt]="item.nombre"
                 >
             </figure>
         </article>
