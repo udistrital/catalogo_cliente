@@ -7,10 +7,10 @@ import data from './data.json';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  data:any = data;
+  data: any = data;
 
   redirect(link) {
     window.open(link, '_blank');
   }
-  
+
 }
