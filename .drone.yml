@@ -34,9 +34,9 @@ pipeline:
     secrets: [ aws_access_key_id, aws_secret_access_key ]
     region: "us-east-1"    
     bucket: "cliente-pruebas"
-    source: dist/**/*
+    source: dist/interfaz_unica_cliente/**/*
     target: /pruebas${DRONE_REPO_NAME%%_cliente}.portaloas.udistrital.edu.co
-    strip_prefix: dist/
+    strip_prefix: dist/interfaz_unica_cliente/
     when:
       branch: [test]
       event: [push, pull_request] 
@@ -47,9 +47,9 @@ pipeline:
     secrets: [ aws_access_key_id, aws_secret_access_key ]
     region: "us-east-1"    
     bucket: "cliente-prod"
-    source: dist/**/*
+    source: dist/interfaz_unica_cliente/**/*
     target: /${DRONE_REPO_NAME%%_cliente}.portaloas.udistrital.edu.co
-    strip_prefix: dist/
+    strip_prefix: dist/interfaz_unica_cliente/
     when:
       branch: [master]
       event: [push, pull_request] 
