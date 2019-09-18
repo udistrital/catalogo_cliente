@@ -1,19 +1,19 @@
 <div class="container-aplicativos">
-    <article class="card">
+    <article class="card" id="card-title">
       <div class="card-text-container">
         <h3 class="card-title">Catálogo de Aplicativos</h3>
       </div>
       <figure class="card-imageContainer">
-          <img src="https://rita.udistrital.edu.co/images/logo_horizontal.png"
-          class="card-image" alt="hola"
+          <img src="/assets/logoUD.png"
+          class="card-image" alt="logo-udistrital"
           width="150">
       </figure>
     </article>
     <article *ngFor="let item of data.categorias; let i = index" class="card">
-      <div class="card-text-app-container">
-        <h3 class="card-title">{{item.nombre}}</h3>
+      <div class="card-text-app-container" [ngStyle]="{'background-color': item.color}">
+        <h3 class="card-title" id="categoria-title">{{item.nombre}}</h3>
       </div>
-      <div class="delimiter" [ngStyle]="{'border-color': item.color}"></div>
+      <!-- <div class="delimiter" [ngStyle]="{'border-color': item.color}"></div> -->
       <div class="card-app-container">
         <article *ngFor="let item of data.categorias[i].aplicaciones; let i = index" class="card-app" (click)="redirect(item.url)">
             <figure class="card-app-imageContainer">

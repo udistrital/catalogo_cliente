@@ -11,7 +11,7 @@
 }
 
 .card{
-    box-shadow: 3px 5px 33px#888888;
+    box-shadow: 1px 0px 17px #888888;
     border-radius: 10px;
     background: #F6F6F6;
     flex-shrink: 0;
@@ -23,14 +23,20 @@
     margin-top: 20px;
 }
 
+#card-title{
+    background-color: #2B3643;
+}
+
 .card-text-container{
     width: 50%;
 }
 
 .card-text-app-container{
     width: 100%;
-    margin-top: 10px;
-    margin-left: 30px;
+    padding-top: 10px;
+    padding-left: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .card-imageContainer{
@@ -39,13 +45,19 @@
 }
 
 .card-title{
-    font-size: 25px;
+    font-size: 24px;
     margin-top: 0px;
     margin-bottom: 10px;
+    font-family: "Open Sans",sans-serif;
+    font-weight: 300;
+    color: white;
 }
 
 
 /*Estilos para las cards de las aplicaciones*/
+#categoria-title {
+    color: white;
+}
 .card-app-container{
     display: flex;
     justify-content: space-evenly;
@@ -54,7 +66,7 @@
 }
 
 .card-app{
-    box-shadow: 3px 5px 33px#888888;
+    box-shadow: 0px 0px 11px #888888;
     border-radius: 10px;
     background: #F6F6F6;
     flex-shrink: 0;
