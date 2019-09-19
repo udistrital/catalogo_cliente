@@ -1,14 +1,6 @@
+<app-header></app-header>
 <div class="container-aplicativos">
-    <article class="card" id="card-title">
-      <div class="card-text-container">
-        <h3 class="card-title">Catálogo de Aplicativos</h3>
-      </div>
-      <figure class="card-imageContainer">
-          <img src="/assets/logoUD.png"
-          class="card-image" alt="logo-udistrital"
-          width="150">
-      </figure>
-    </article>
+    
     <article *ngFor="let item of data.categorias; let i = index" class="card">
       <div class="card-text-app-container" [ngStyle]="{'background-color': item.color}">
         <h3 class="card-title" id="categoria-title">{{item.nombre}}</h3>
