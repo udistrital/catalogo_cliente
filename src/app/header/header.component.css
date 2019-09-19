@@ -55,7 +55,55 @@
     margin-bottom: 10px;
     color: white;
 }
+.card-image{
+    width:250px;
+}
 
 #card-title{
     background-color: #2B3643;
+}
+
+@media screen and (max-width: 1023px){
+    .card-app{
+        width: 15%;
+    }
+    .card-image{
+        width:200px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .card-title{
+        font-size: 20px;
+    }
+    
+    .button-container{
+        width:100%;
+        display: flex;
+        justify-content: center;
+    }
+    .button-header{
+        font-size:20px;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .card-image{
+        width: 120px;
+    }
+    .button-header{
+        font-size:16px;
+    }
+    
+
+    .card-text-container{
+        width: 38%;
+        margin-top: 8px;
+    }   
+
+    .card-title{
+        font-size: 15px;
+    }
+
+    
 }
