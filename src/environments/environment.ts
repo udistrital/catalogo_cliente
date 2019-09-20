@@ -12,42 +12,42 @@ export const environment = {
         {
           nombre: 'AGORA',
           url: 'https://www.google.com',
-          estilo: 'agora'
+          estilo: 'agora-info'
         },
         {
           nombre: 'ARGO',
           url: 'www.google.com',
-          estilo: 'argo'
+          estilo: 'argo-info'
         },
         {
           nombre: 'ARKA',
           url: 'www.google.com',
-          estilo: 'arka'
+          estilo: 'arka-info'
         },
         {
           nombre: 'CUMPLIDOS',
           url: 'www.google.com',
-          estilo: 'cumplidos'
+          estilo: 'cumplidos-info'
         },
         {
           nombre: 'RESOLUCIONES',
           url: 'www.google.com',
-          estilo: 'resoluciones'
+          estilo: 'resoluciones-info'
         },
         {
           nombre: 'OIKOS',
           url: 'www.google.com',
-          estilo: 'oikos'
+          estilo: 'oikos-info'
         },
         {
           nombre: 'SISIFO',
           url: 'www.google.com',
-          estilo: 'sisifo'
+          estilo: 'sisifo-info'
         },
         {
           nombre: 'TEMIS',
           url: 'www.google.com',
-          estilo: 'temis'
+          estilo: 'temis-info'
         }
       ]
     },
@@ -58,22 +58,22 @@ export const environment = {
         {
           nombre: 'JANO',
           url: 'www.google.com',
-          estilo: 'jano'
+          estilo: 'jano-info'
         },
         {
           nombre: 'KYRON',
           url: 'www.google.com',
-          estilo: 'kyron'
+          estilo: 'kyron-info'
         },
         {
           nombre: 'POLUX',
           url: 'www.google.com',
-          estilo: 'polux'
+          estilo: 'polux-info'
         },
         {
           nombre: 'SGA',
           url: 'www.google.com',
-          estilo: 'sga'
+          estilo: 'sga-info'
         }
       ]
     },
@@ -84,12 +84,12 @@ export const environment = {
         {
           nombre: 'KRONOS',
           url: 'www.google.com',
-          estilo: 'kronos'
+          estilo: 'kronos-info'
         },
         {
           nombre: 'TITAN',
           url: 'www.google.com',
-          estilo: 'titan'
+          estilo: 'titan-info'
         }
       ]
     },
@@ -100,7 +100,7 @@ export const environment = {
         {
           nombre: 'PERSEO',
           url: 'www.google.com',
-          estilo: 'perseo'
+          estilo: 'perseo-info'
         }
       ]
     }

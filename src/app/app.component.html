@@ -1,18 +1,18 @@
 <app-header></app-header>
 <div class="container-aplicativos">
-    
+
     <article *ngFor="let item of data.categorias; let i = index" class="card">
-      <div class="card-text-app-container" [ngStyle]="{'background-color': item.color}">
-        <h3 class="card-title" id="categoria-title">{{item.nombre}}</h3>
-      </div>
-      <!-- <div class="delimiter" [ngStyle]="{'border-color': item.color}"></div> -->
-      <div class="card-app-container">
-        <article *ngFor="let item of data.categorias[i].aplicaciones; let i = index" class="card-app" (click)="redirect(item.url)">
-            <figure class="card-app-imageContainer">
-                <img class="menu-app" [id]="item.estilo">
-            </figure>
-        </article>
-      </div>
+        <div class="card-text-app-container" [ngStyle]="{'background-color': item.color}">
+            <h3 class="card-title" id="categoria-title">{{item.nombre}}</h3>
+        </div>
+        <!-- <div class="delimiter" [ngStyle]="{'border-color': item.color}"></div> -->
+        <div class="card-app-container">
+            <article *ngFor="let item of data.categorias[i].aplicaciones; let i = index" class="card-app" (click)="redirect(item.url)">
+                <figure class="card-app-imageContainer">
+                    <div class="menu-app-info" [id]="item.estilo"></div>
+                </figure>
+            </article>
+        </div>
     </article>
 </div>
 <app-footer></app-footer>

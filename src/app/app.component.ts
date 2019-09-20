@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import data from './data.json';
+import { environment } from './../environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +7,7 @@ import data from './data.json';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  data: any = data;
+  data: any = environment;
 
   redirect(link) {
     window.open(link, '_blank');
