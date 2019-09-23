@@ -14,8 +14,11 @@
     <div class="footer-logos">
         <div class="social" *ngFor="let lista of social.list">
             <i class="icon ion-md-{{lista.class}}"></i>
-            <p> {{lista.value}}   
+            <div class="text-container">
+            <p *ngFor="let value of lista.value"> 
+                {{value}}   
             </p>
+        </div>
       </div>
     </div>
   </div>
