@@ -53,7 +53,7 @@ export const environment = {
         },
         {
             nombre: 'Gestion Academica',
-            color: '#839EB1',
+            color: '#15485E',
             aplicaciones: [
                 {
                     nombre: 'JANO',
@@ -79,7 +79,7 @@ export const environment = {
         },
         {
             nombre: 'Gestion Financiera',
-            color: '#E8E1C5',
+            color: '#DE9E0F',
             aplicaciones: [
                 {
                     nombre: 'KRONOS',
@@ -95,7 +95,7 @@ export const environment = {
         },
         {
             nombre: 'Voto Electrónico',
-            color: '#A0AE91',
+            color: '#397A18',
             aplicaciones: [
                 {
                     nombre: 'PERSEO',
