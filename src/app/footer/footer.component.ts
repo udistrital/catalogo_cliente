@@ -163,22 +163,27 @@ export class FooterComponent {
     };
     this.social = {
       list: [{
-        url: 'https://www.facebook.com/UniversidadDistrital',
-        title: 'Facebook',
-        class: 'facebook',
+        title: 'Horario',
+        class: 'time',
+        value: 'Lunes a viernes 8am a 5pm'
       }, {
-        url: 'https://twitter.com/udistrital',
-        title: 'Twitter',
-        class: 'twitter',
+        title: 'Nombre',
+        class: 'globe',
+        value: 'Sistema Integrado de informatica y  Telecomunicaciones ',
       }, {
-        url: 'https://www.instagram.com/universidaddistrital/',
-        title: 'Instagram',
-        class: 'instagram',
+        title: 'Phone',
+        class: 'call',
+        value: '323 93 00 \n\rExt. 1112',
       }, {
-        url: 'https://www.youtube.com/udistritaltv',
-        title: 'Youtube',
-        class: 'youtube',
-      }],
+        title: 'Direccion',
+        class: 'pin',
+        value: 'Cra 8 # 40-78 \u00A0 \u00A0 \u00A0 Piso 1',
+      }, {
+        title:'mail',
+        class:'at',
+        value:'computo@udistrital.edu.co'
+      }
+    ],
     }
     this.copyright = '© Copyright 2019. | Todos los Derechos Reservados';
   }
