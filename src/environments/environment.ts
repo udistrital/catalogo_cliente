@@ -6,7 +6,7 @@ export const environment = {
   production: false,
   categorias: [
     {
-      nombre: 'Gestion Administrativa',
+      nombre: 'Gestión Administrativa',
       color: '#8E2825',
       aplicaciones: [
         {
@@ -52,7 +52,7 @@ export const environment = {
       ]
     },
     {
-      nombre: 'Gestion Academica',
+      nombre: 'Gestión Académica',
       color: '#15485E',
       aplicaciones: [
         {
@@ -78,7 +78,7 @@ export const environment = {
       ]
     },
     {
-      nombre: 'Gestion Financiera',
+      nombre: 'Gestión Financiera',
       color: '#DE9E0F',
       aplicaciones: [
         {
