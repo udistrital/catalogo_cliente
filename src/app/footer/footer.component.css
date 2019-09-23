@@ -14,7 +14,9 @@
     border-right: .1rem solid white;
     align-self: center;
 }
-
+.text-container{
+    align-self: center;
+}
 .card-image{
     width:230px;   
 }
