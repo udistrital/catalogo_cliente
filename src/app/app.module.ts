@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
+import { ImplicitAutenticationService } from './service/implicit-autentication.service';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,9 @@ import { HeaderComponent } from './header/header.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    ImplicitAutenticationService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

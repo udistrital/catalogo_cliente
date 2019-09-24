@@ -4,9 +4,18 @@
 
 export const environment = {
     production: false,
+    TOKEN: {
+        AUTORIZATION_URL: 'https://autenticacion.portaloas.udistrital.edu.co/oauth2/authorize',
+      CLIENTE_ID: 'yvXIb7DEJXCCvTvpkBTyQJthBj8a',
+      RESPONSE_TYPE: 'id_token token',
+      SCOPE: 'openid email role documento',
+      REDIRECT_URL: 'https://pruebascatalogo.portaloas.udistrital.edu.co/',
+      SIGN_OUT_URL: 'https://autenticacion.portaloas.udistrital.edu.co/oidc/logout',
+      SIGN_OUT_REDIRECT_URL: 'https://pruebascatalogo.portaloas.udistrital.edu.co/',
+    },
     categorias: [
         {
-            nombre: 'Gestion Administrativa',
+            nombre: 'Gestión Administrativa',
             color: '#8E2825',
             aplicaciones: [
                 {
@@ -52,7 +61,7 @@ export const environment = {
             ]
         },
         {
-            nombre: 'Gestion Academica',
+            nombre: 'Gestión Academica',
             color: '#15485E',
             aplicaciones: [
                 {
@@ -78,7 +87,7 @@ export const environment = {
             ]
         },
         {
-            nombre: 'Gestion Financiera',
+            nombre: 'Gestión Financiera',
             color: '#DE9E0F',
             aplicaciones: [
                 {
