@@ -15,11 +15,18 @@
               <i class="fa fa-bell-o"></i>
             </button>
           </div>
-            <div class="button-div">
-              <button type="button" class="button-header">
-                <i class="nb-user"></i>
-                Iniciar Sesion
-              </button>
-            </div>
+            <div *ngIf="!liveToken(),then thenBlock else elseBlock" class="button-div"></div>
+              <ng-template #thenBlock>
+                <button type="button" class="button-header" (click)="login()">
+                  
+                  Iniciar Sesión
+                </button>
+              </ng-template>
+              <ng-template #elseBlock>
+                  <button type="button" class="button-header" (click)="logout()">
+                      
+                      Cerrar Sesión
+                    </button>
+                </ng-template>              
         </div>
     </article>
