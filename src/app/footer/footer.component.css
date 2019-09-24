@@ -1,4 +1,4 @@
-.footer-div{    
+.footer-div{
     background-color: #2B3643;
     width: 100%;
     display: flex;
@@ -18,7 +18,7 @@
     align-self: center;
 }
 .card-image{
-    width:230px;   
+    width:230px;
 }
 
 .footer-column{
@@ -33,6 +33,7 @@
     text-align: center;
 }
 h3,h5{
+    font-family: OpenSans !important;
     margin-bottom: .5rem;
     font-size: 1rem;
     font-family: Exo;
@@ -64,12 +65,13 @@ h3,h5{
     font-size:32px;
     align-self: center;
     margin-right: 10px;
-    
+
 }
 p{
     font-size:14px;
     text-align: center;
     margin: 0;
+    font-family: OpenSans;
 }
 
 @media screen and (max-width: 1132px){
@@ -82,7 +84,7 @@ p{
     .footer-column{
         margin-right:0;
     }
-    
+
 }
 
 @media screen and (max-width: 930px){
