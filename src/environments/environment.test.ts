@@ -61,7 +61,7 @@ export const environment = {
             ]
         },
         {
-            nombre: 'Gestión Academica',
+            nombre: 'Gestión Académica',
             color: '#15485E',
             aplicaciones: [
                 {
