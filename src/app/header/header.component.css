@@ -67,6 +67,7 @@
 
 #card-title {
     background-color: #2B3643;
+    height: 85px;
 }
 
 @media screen and (max-width: 1023px) {
