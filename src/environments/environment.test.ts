@@ -9,9 +9,9 @@ export const environment = {
       CLIENTE_ID: 'yvXIb7DEJXCCvTvpkBTyQJthBj8a',
       RESPONSE_TYPE: 'id_token token',
       SCOPE: 'openid email role documento',
-      REDIRECT_URL: 'https://pruebascatalogo.portaloas.udistrital.edu.co/',
+      REDIRECT_URL: 'https://pruebascatalogo.portaloas.udistrital.edu.co',
       SIGN_OUT_URL: 'https://autenticacion.portaloas.udistrital.edu.co/oidc/logout',
-      SIGN_OUT_REDIRECT_URL: 'https://pruebascatalogo.portaloas.udistrital.edu.co/',
+      SIGN_OUT_REDIRECT_URL: 'https://pruebascatalogo.portaloas.udistrital.edu.co',
     },
     categorias: [
         {
