@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { ImplicitAutenticationService } from './service/implicit-autentication.service';
+import { NotioasModule } from 'notioas';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,7 @@ import { ImplicitAutenticationService } from './service/implicit-autentication.s
     FooterComponent,
     HeaderComponent
   ],
-  imports: [
+  imports: [NotioasModule,
     BrowserModule
   ],
   providers: [

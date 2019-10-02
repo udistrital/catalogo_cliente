@@ -1,17 +1,25 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { ImplicitAutenticationService } from '../service/implicit-autentication.service';
+import { NotioasService } from 'notioas';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent implements OnInit {
-  private autenticacion= new ImplicitAutenticationService;
-  constructor() { }
+export class HeaderComponent implements OnInit , AfterViewInit {
+  ngAfterViewInit(): void {
+    if (this.autenticacion.live()) {
+      this.notificacionService.initLib(environment.CONFIGURACION_SERVICE, environment.NOTIFICACION_SERVICE)
+    }
+  }
   username = '';
   liveTokenValue: boolean = false;
-  
+  private autenticacion= new ImplicitAutenticationService;
+  constructor(public notificacionService: NotioasService) { }
+
+
   ngOnInit() {
   }
 
@@ -22,17 +30,22 @@ export class HeaderComponent implements OnInit {
     }
     return this.autenticacion.live();
   }
- 
 
-  isLoggin(){
+
+  isLoggin() {
     this.autenticacion.live();
   }
 
-  login(){
+  login() {
     this.autenticacion.login();
   }
 
-  logout(){
+  logout() {
     this.autenticacion.logout();
   }
+
+  toggleNotifications(): boolean {
+    this.notificacionService.toogleMenuNotify();
+    return false;
+}
 }

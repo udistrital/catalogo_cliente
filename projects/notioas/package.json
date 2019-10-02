@@ -1,0 +1,16 @@
+{
+  "name": "notioas",
+  "version": "0.0.5",
+  "peerDependencies": {
+    "@angular/common": "~8.2.5",
+    "@angular/core": "~8.2.5",
+    "rxjs": "^6.5.2",
+    "rxjs-compat": "^6.5.2",
+    "ngx-moment": "^3.4.0"
+  },
+  "dependencies": {
+    "@angular/common": "~8.2.5",
+    "@angular/core": "~8.2.5",
+    "rxjs": "^6.5.2"
+  }
+}
