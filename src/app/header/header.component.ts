@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { ImplicitAutenticationService } from '../service/implicit-autentication.service';
 import { NotioasService } from 'notioas';
 import { environment } from '../../environments/environment';
@@ -8,12 +8,18 @@ import { environment } from '../../environments/environment';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent implements OnInit {
-  private autenticacion= new ImplicitAutenticationService;
-  constructor(public notificacionService: NotioasService) { }
+export class HeaderComponent implements OnInit , AfterViewInit {
+  ngAfterViewInit(): void {
+    if (this.autenticacion.live()) {
+      this.notificacionService.initLib(environment.CONFIGURACION_SERVICE, environment.NOTIFICACION_SERVICE)
+    }
+  }
   username = '';
   liveTokenValue: boolean = false;
-  
+  private autenticacion= new ImplicitAutenticationService;
+  constructor(public notificacionService: NotioasService) { }
+
+
   ngOnInit() {
   }
 
@@ -21,21 +27,20 @@ export class HeaderComponent implements OnInit {
     if (this.autenticacion.live()) {
       this.liveTokenValue = this.autenticacion.live();
       this.username = (this.autenticacion.getPayload()).sub;
-      this.notificacionService.initLib(environment.CONFIGURACION_SERVICE, environment.NOTIFICACION_SERVICE)
     }
     return this.autenticacion.live();
   }
- 
 
-  isLoggin(){
+
+  isLoggin() {
     this.autenticacion.live();
   }
 
-  login(){
+  login() {
     this.autenticacion.login();
   }
 
-  logout(){
+  logout() {
     this.autenticacion.logout();
   }
 
