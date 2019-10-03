@@ -1,7 +1,14 @@
 @import url('https://pruebasassets.portaloas.udistrital.edu.co/logo-stylus.css');
 
+.aplicaciones_menu_container p{
+  margin-bottom: 11px;
+  margin-top: 0;
+}
+
 .title-notifications{
   text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
 }
 
 .menu-app {
@@ -14,7 +21,7 @@
 #noleida,
 #enviada,
 #ENVIADA {
-  background-color: grey;
+  background-color: rgba(43, 54, 67, 0.1);
 }
 
 .notification-item {
@@ -37,13 +44,16 @@
 
 .notifications-text-container p {
   margin: 0;
-  font-family: "Exo";
+  font-family: "Open Sans", sans-serif;
   color: black;
   white-space: normal;
+  font-size: 15px;
 }
 
 .form-control {
-  margin: 0px 34px;
+  margin: 0px 23px;
+    font-family: "Open Sans", sans-serif;
+    width: 86%;
 }
 
 .aplicaciones_menu_container {
@@ -65,6 +75,7 @@
   width: 320px;
   transition: 0.3s;
   padding-top: 10px;
+  z-index: 1;
 }
 .menu_is_active {
   right: 0;

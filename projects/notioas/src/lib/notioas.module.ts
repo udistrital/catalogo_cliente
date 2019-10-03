@@ -3,7 +3,7 @@ import { NotioasComponent } from './notioas.component';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
-// import { MomentModule } from 'ngx-moment';
+import { MomentModule } from 'ngx-moment';
 
 // import { BrowserModule } from '@angular/platform-browser';
 
@@ -12,8 +12,8 @@ import { RouterModule, Routes } from '@angular/router';
   imports: [
     CommonModule,
     HttpClientModule,
-    RouterModule.forRoot([])
-    // MomentModule,
+    RouterModule.forRoot([]),
+    MomentModule,
     // BrowserModule,
   ],
   exports: [NotioasComponent],

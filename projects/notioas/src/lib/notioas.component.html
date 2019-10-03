@@ -1,6 +1,6 @@
 <div id="menu" [ngClass]="{'aplicaciones_menu_container': true, 'menu_is_active': activo }">
   <div class="title-notifications">
-    <h4>Notificaciones</h4>
+    <p>Notificaciones</p>
   </div>
   <div class="row">
       <div class="input-group">
@@ -22,7 +22,7 @@
                 {{notificacion.Content.Message.Message}}
               </p>
               <p>
-                {{notificacion.FechaCreacion}}
+                {{notificacion.FechaCreacion | amLocale:'es' | amTimeAgo:true}}
               </p>
             </div>
       </div>
