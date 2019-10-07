@@ -21,19 +21,20 @@ export class HeaderComponent implements OnInit , AfterViewInit {
 
 
   ngOnInit() {
+    this.liveToken();
   }
 
   liveToken() {
-    if (this.autenticacion.live()) {
-      this.liveTokenValue = this.autenticacion.live();
+    if (this.isLoggin()) {
+      this.liveTokenValue = true;
       this.username = (this.autenticacion.getPayload()).sub;
     }
-    return this.autenticacion.live();
+    return false;
   }
 
 
   isLoggin() {
-    this.autenticacion.live();
+    return this.autenticacion.live();
   }
 
   login() {
