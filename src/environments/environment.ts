@@ -15,7 +15,7 @@ export const environment = {
     SIGN_OUT_URL: 'https://autenticacion.portaloas.udistrital.edu.co/oidc/logout',
     SIGN_OUT_REDIRECT_URL: 'http://localhost:4200/',
   },
-  APLICACIONES_SERVICE: 'http://pruebasapi.intranetoas.udistrital.edu.co:8086/v1/aplicacion_rol/aplicacion_rol',
+  APLICACIONES_SERVICE: 'https://autenticacion.portaloas.udistrital.edu.co/apioas/configuracion_crud_api/v1/aplicacion_rol/aplicacion_rol',
   categorias: [
     {
       nombre: 'Gestión Administrativa',

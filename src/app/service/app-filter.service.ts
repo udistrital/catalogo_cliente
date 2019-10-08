@@ -15,12 +15,20 @@ export class AppFilterService {
   httpOptions: { headers: HttpHeaders; };
 
   constructor(private http: HttpClient) {
+    // tslint:disable-next-line: variable-name
+    const acces_token = window.localStorage.getItem('access_token');
 
-    this.httpOptions = {
-      headers: new HttpHeaders({
-        'Content-Type': 'application/json'
-      })
-    };
+    if (acces_token) {
+      // Clone the request and replace the original headers with
+      // cloned headers, updated with the authorization.
+        const authToken = 'Bearer ' + acces_token;
+
+        this.httpOptions = {
+        headers: new HttpHeaders({
+          'Authorization': authToken,
+        })
+      };
+    }
   }
 
   existe(nombre: string, array: any) {

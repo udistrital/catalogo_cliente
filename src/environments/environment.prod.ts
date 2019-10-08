@@ -4,6 +4,8 @@
 
 export const environment = {
   production: false,
+  CONFIGURACION_SERVICE: 'https://autenticacion.portaloas.udistrital.edu.co/apioas/configuracion_crud_api/v1/',
+  NOTIFICACION_SERVICE: 'ws://pruebasapi.intranetoas.udistrital.edu.co:8116/ws',
   TOKEN: {
     AUTORIZATION_URL: 'https://autenticacion.portaloas.udistrital.edu.co/oauth2/authorize',
     CLIENTE_ID: 'yvXIb7DEJXCCvTvpkBTyQJthBj8a',
@@ -13,6 +15,8 @@ export const environment = {
     SIGN_OUT_URL: 'https://autenticacion.portaloas.udistrital.edu.co/oidc/logout',
     SIGN_OUT_REDIRECT_URL: 'https://pruebascatalogo.portaloas.udistrital.edu.co/',
   },
+  APLICACIONES_SERVICE:
+  'https://autenticacion.portaloas.udistrital.edu.co/apioas/configuracion_crud_api/v1/aplicacion_rol/aplicacion_rol',
   categorias: [
       {
           nombre: 'Gestión Administrativa',
