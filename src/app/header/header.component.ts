@@ -2,6 +2,7 @@ import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { ImplicitAutenticationService } from '../service/implicit-autentication.service';
 import { NotioasService } from 'notioas';
 import { environment } from '../../environments/environment';
+import { AppFilterService } from '../service/app-filter.service';
 
 @Component({
   selector: 'app-header',
@@ -17,23 +18,40 @@ export class HeaderComponent implements OnInit , AfterViewInit {
   username = '';
   liveTokenValue: boolean = false;
   private autenticacion= new ImplicitAutenticationService;
-  constructor(public notificacionService: NotioasService) { }
+  constructor(public notificacionService: NotioasService,public appFilter:AppFilterService) { }
 
 
   ngOnInit() {
+    this.liveToken()
+    if (this.liveTokenValue){
+      this.appFilter.getApplication(
+        this.getRole()
+      ).subscribe(res=>{console.info(res)});
+    }
   }
-
+  getRole= function(){
+    var data=[]
+    if (window.localStorage.getItem("id_token")!==null){
+        var id_token=window.localStorage.getItem("id_token").split(".");
+        var payload=JSON.parse(atob(id_token[1]))
+        payload.role.forEach(function(element){
+            var rol={Nombre:element}
+            data.push(rol)        
+            })            
+        }
+        return data
+}
   liveToken() {
-    if (this.autenticacion.live()) {
-      this.liveTokenValue = this.autenticacion.live();
+    if (this.isLoggin()) {
+      this.liveTokenValue = true;
       this.username = (this.autenticacion.getPayload()).sub;
     }
-    return this.autenticacion.live();
+    return false;
   }
 
 
   isLoggin() {
-    this.autenticacion.live();
+    return this.autenticacion.live();
   }
 
   login() {
