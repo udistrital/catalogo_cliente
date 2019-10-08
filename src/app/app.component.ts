@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { environment } from './../environments/environment';
+import { AppFilterService } from './service/app-filter.service';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +7,8 @@ import { environment } from './../environments/environment';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  data: any = environment;
+  constructor(public appFilter: AppFilterService) {
+  }
 
   redirect(link) {
     window.open(link, '_blank');

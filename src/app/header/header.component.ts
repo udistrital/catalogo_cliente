@@ -15,36 +15,24 @@ export class HeaderComponent implements OnInit , AfterViewInit {
       this.notificacionService.initLib(environment.CONFIGURACION_SERVICE, environment.NOTIFICACION_SERVICE)
     }
   }
+  // tslint:disable-next-line: member-ordering
   username = '';
+  // tslint:disable-next-line: member-ordering
   liveTokenValue: boolean = false;
-  private autenticacion= new ImplicitAutenticationService;
-  constructor(public notificacionService: NotioasService,public appFilter:AppFilterService) { }
+  private autenticacion = new ImplicitAutenticationService;
+  constructor(public notificacionService: NotioasService, public appFilter: AppFilterService) { }
 
 
   ngOnInit() {
-    this.liveToken()
-    if (this.liveTokenValue){
-      this.appFilter.getApplication(
-        this.getRole()
-      ).subscribe(res=>{console.info(res)});
-    }
+    this.liveToken();
   }
-  getRole= function(){
-    var data=[]
-    if (window.localStorage.getItem("id_token")!==null){
-        var id_token=window.localStorage.getItem("id_token").split(".");
-        var payload=JSON.parse(atob(id_token[1]))
-        payload.role.forEach(function(element){
-            var rol={Nombre:element}
-            data.push(rol)        
-            })            
-        }
-        return data
-}
   liveToken() {
     if (this.isLoggin()) {
+      this.appFilter.getAplication();
       this.liveTokenValue = true;
       this.username = (this.autenticacion.getPayload()).sub;
+    } else {
+      this.appFilter.getAllAplications();
     }
     return false;
   }
