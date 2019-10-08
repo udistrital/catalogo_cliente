@@ -6,6 +6,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { ImplicitAutenticationService } from './service/implicit-autentication.service';
 import { NotioasModule } from 'notioas';
+import { AppFilterService } from './service/app-filter.service';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NotioasModule } from 'notioas';
     BrowserModule
   ],
   providers: [
-    ImplicitAutenticationService
+    ImplicitAutenticationService,
+    AppFilterService
   ],
   bootstrap: [AppComponent]
 })

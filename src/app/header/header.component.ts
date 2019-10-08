@@ -2,6 +2,7 @@ import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { ImplicitAutenticationService } from '../service/implicit-autentication.service';
 import { NotioasService } from 'notioas';
 import { environment } from '../../environments/environment';
+import { AppFilterService } from '../service/app-filter.service';
 
 @Component({
   selector: 'app-header',
@@ -14,20 +15,24 @@ export class HeaderComponent implements OnInit , AfterViewInit {
       this.notificacionService.initLib(environment.CONFIGURACION_SERVICE, environment.NOTIFICACION_SERVICE)
     }
   }
+  // tslint:disable-next-line: member-ordering
   username = '';
+  // tslint:disable-next-line: member-ordering
   liveTokenValue: boolean = false;
-  private autenticacion= new ImplicitAutenticationService;
-  constructor(public notificacionService: NotioasService) { }
+  private autenticacion = new ImplicitAutenticationService;
+  constructor(public notificacionService: NotioasService, public appFilter: AppFilterService) { }
 
 
   ngOnInit() {
     this.liveToken();
   }
-
   liveToken() {
     if (this.isLoggin()) {
+      this.appFilter.getAplication();
       this.liveTokenValue = true;
       this.username = (this.autenticacion.getPayload()).sub;
+    } else {
+      this.appFilter.getAllAplications();
     }
     return false;
   }
