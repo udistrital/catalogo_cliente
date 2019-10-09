@@ -5,12 +5,26 @@
             <h3 class="card-title" id="categoria-title">{{categoria.nombre}}</h3>
         </div>
         <!-- <div class="delimiter" [ngStyle]="{'border-color': item.color}"></div> -->
-        <div class="card-app-container">
+        <!-- <div class="card-app-container">
             <article *ngFor="let aplicacion of categoria.aplicaciones" class="card-app" (click)="redirect(aplicacion.url)">
                 <figure class="card-app-imageContainer">
                     <div class="menu-app-info" [id]="aplicacion.estilo"></div>
                 </figure>
             </article>
+        </div> -->
+        <div class="card-app-container">
+            <div *ngFor="let aplicacion of categoria.aplicaciones" class="flip-card" (click)="redirect(aplicacion.url)">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                        <figure class="card-app-imageContainer">
+                                <div class="menu-app-info" [id]="aplicacion.estilo"></div>
+                        </figure>
+                  </div>
+                  <div class="flip-card-back" [ngStyle]="{'background-color': categoria.color}">
+                    <p class="flip-card-text">{{aplicacion.descripcion}}</p> 
+                  </div>
+                </div>
+              </div>
         </div>
     </article>
 </div>
