@@ -25,49 +25,49 @@ export const environment = {
           nombre: 'AGORA',
           url: 'https://www.google.com',
           estilo: 'agora-info',
-          descripcion: "Aplicacion creada para cumplir algun objetivo en especifico"
+          descripcion: 'Aplicacion creada para cumplir algun objetivo en especifico'
         },
         {
           nombre: 'ARGO',
           url: 'www.google.com',
           estilo: 'argo-info',
-          descripcion: "Aplicacion creada para cumplir algun objetivo en especifico"
+          descripcion: 'Aplicacion creada para cumplir algun objetivo en especifico'
         },
         {
           nombre: 'ARKA',
           url: 'www.google.com',
           estilo: 'arka-info',
-          descripcion: "Aplicacion creada para cumplir algun objetivo en especifico"
+          descripcion: 'Aplicacion creada para cumplir algun objetivo en especifico'
         },
         {
           nombre: 'CUMPLIDOS',
           url: 'www.google.com',
           estilo: 'cumplidos-info',
-          descripcion: "Aplicacion creada para cumplir algun objetivo en especifico"
+          descripcion: 'Aplicacion creada para cumplir algun objetivo en especifico'
         },
         {
           nombre: 'RESOLUCIONES',
           url: 'www.google.com',
           estilo: 'resoluciones-info',
-          descripcion: "Aplicacion creada para cumplir algun objetivo en especifico"
+          descripcion: 'Aplicacion creada para cumplir algun objetivo en especifico'
         },
         {
           nombre: 'OIKOS',
           url: 'www.google.com',
           estilo: 'oikos-info',
-          descripcion: "Aplicacion creada para cumplir algun objetivo en especifico"
+          descripcion: 'Aplicacion creada para cumplir algun objetivo en especifico'
         },
         {
           nombre: 'SISIFO',
           url: 'www.google.com',
           estilo: 'sisifo-info',
-          descripcion: "Aplicacion creada para cumplir algun objetivo en especifico"
+          descripcion: 'Aplicacion creada para cumplir algun objetivo en especifico'
         },
         {
           nombre: 'TEMIS',
           url: 'www.google.com',
           estilo: 'temis-info',
-          descripcion: "Aplicacion creada para cumplir algun objetivo en especifico"
+          descripcion: 'Aplicacion creada para cumplir algun objetivo en especifico'
         }
       ]
     },
@@ -79,25 +79,25 @@ export const environment = {
           nombre: 'JANO',
           url: 'www.google.com',
           estilo: 'jano-info',
-          descripcion: "Aplicacion creada para cumplir algun objetivo en especifico"
+          descripcion: 'Aplicacion creada para cumplir algun objetivo en especifico'
         },
         {
           nombre: 'KYRON',
           url: 'www.google.com',
           estilo: 'kyron-info',
-          descripcion: "Aplicacion creada para cumplir algun objetivo en especifico"
+          descripcion: 'Aplicacion creada para cumplir algun objetivo en especifico'
         },
         {
           nombre: 'POLUX',
           url: 'www.google.com',
           estilo: 'polux-info',
-          descripcion: "Aplicacion creada para cumplir algun objetivo en especifico"
+          descripcion: 'Aplicacion creada para cumplir algun objetivo en especifico'
         },
         {
           nombre: 'SGA',
           url: 'www.google.com',
           estilo: 'sga-info',
-          descripcion: "Aplicacion creada para cumplir algun objetivo en especifico"
+          descripcion: 'Aplicacion creada para cumplir algun objetivo en especifico'
         }
       ]
     },
@@ -109,13 +109,13 @@ export const environment = {
           nombre: 'KRONOS',
           url: 'www.google.com',
           estilo: 'kronos-info',
-          descripcion: "Aplicacion creada para cumplir algun objetivo en especifico"
+          descripcion: 'Aplicacion creada para cumplir algun objetivo en especifico'
         },
         {
           nombre: 'TITAN',
           url: 'www.google.com',
           estilo: 'titan-info',
-          descripcion: "Aplicacion creada para cumplir algun objetivo en especifico"
+          descripcion: 'Aplicacion creada para cumplir algun objetivo en especifico'
         }
       ]
     },
@@ -127,7 +127,7 @@ export const environment = {
           nombre: 'PERSEO',
           url: 'www.google.com',
           estilo: 'perseo-info',
-          descripcion: "Aplicacion creada para cumplir algun objetivo en especifico"
+          descripcion: 'Aplicacion creada para cumplir algun objetivo en especifico'
         }
       ]
     }

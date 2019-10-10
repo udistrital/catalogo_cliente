@@ -15,110 +15,125 @@ export const environment = {
       SIGN_OUT_URL: 'https://autenticacion.portaloas.udistrital.edu.co/oidc/logout',
       SIGN_OUT_REDIRECT_URL: 'https://pruebascatalogo.portaloas.udistrital.edu.co',
     },
-    APLICACIONES_SERVICE:'https://autenticacion.portaloas.udistrital.edu.co/apioas/configuracion_crud_api/v1/aplicacion_rol/aplicacion_rol',
+    APLICACIONES_SERVICE:
+    'https://autenticacion.portaloas.udistrital.edu.co/apioas/configuracion_crud_api/v1/aplicacion_rol/aplicacion_rol',
     categorias: [
-        {
-            nombre: 'Gestión Administrativa',
-            color: '#8E2825',
-            aplicaciones: [
-                {
-                    nombre: 'AGORA',
-                    url: 'https://www.google.com',
-                    estilo: 'agora-info'
-                },
-                {
-                    nombre: 'ARGO',
-                    url: 'www.google.com',
-                    estilo: 'argo-info'
-                },
-                {
-                    nombre: 'ARKA',
-                    url: 'www.google.com',
-                    estilo: 'arka-info'
-                },
-                {
-                    nombre: 'CUMPLIDOS',
-                    url: 'www.google.com',
-                    estilo: 'cumplidos-info'
-                },
-                {
-                    nombre: 'RESOLUCIONES',
-                    url: 'www.google.com',
-                    estilo: 'resoluciones-info'
-                },
-                {
-                    nombre: 'OIKOS',
-                    url: 'www.google.com',
-                    estilo: 'oikos-info'
-                },
-                {
-                    nombre: 'SISIFO',
-                    url: 'www.google.com',
-                    estilo: 'sisifo-info'
-                },
-                {
-                    nombre: 'TEMIS',
-                    url: 'www.google.com',
-                    estilo: 'temis-info'
-                }
-            ]
-        },
-        {
-            nombre: 'Gestión Académica',
-            color: '#15485E',
-            aplicaciones: [
-                {
-                    nombre: 'JANO',
-                    url: 'www.google.com',
-                    estilo: 'jano-info'
-                },
-                {
-                    nombre: 'KYRON',
-                    url: 'www.google.com',
-                    estilo: 'kyron-info'
-                },
-                {
-                    nombre: 'POLUX',
-                    url: 'www.google.com',
-                    estilo: 'polux-info'
-                },
-                {
-                    nombre: 'SGA',
-                    url: 'www.google.com',
-                    estilo: 'sga-info'
-                }
-            ]
-        },
-        {
-            nombre: 'Gestión Financiera',
-            color: '#DE9E0F',
-            aplicaciones: [
-                {
-                    nombre: 'KRONOS',
-                    url: 'www.google.com',
-                    estilo: 'kronos-info'
-                },
-                {
-                    nombre: 'TITAN',
-                    url: 'www.google.com',
-                    estilo: 'titan-info'
-                }
-            ]
-        },
-        {
-            nombre: 'Voto Electrónico',
-            color: '#397A18',
-            aplicaciones: [
-                {
-                    nombre: 'PERSEO',
-                    url: 'www.google.com',
-                    estilo: 'perseo-info'
-                }
-            ]
-        }
+      {
+        nombre: 'Gestión Administrativa',
+        color: '#8E2825',
+        aplicaciones: [
+          {
+            nombre: 'AGORA',
+            url: 'https://www.google.com',
+            estilo: 'agora-info',
+            descripcion: 'Aplicación creada para cumplir algun objetivo en especifico'
+          },
+          {
+            nombre: 'ARGO',
+            url: 'www.google.com',
+            estilo: 'argo-info',
+            descripcion: 'Aplicación creada para cumplir algun objetivo en especifico'
+          },
+          {
+            nombre: 'ARKA',
+            url: 'www.google.com',
+            estilo: 'arka-info',
+            descripcion: 'Aplicación creada para cumplir algun objetivo en especifico'
+          },
+          {
+            nombre: 'CUMPLIDOS',
+            url: 'www.google.com',
+            estilo: 'cumplidos-info',
+            descripcion: 'Aplicación creada para cumplir algun objetivo en especifico'
+          },
+          {
+            nombre: 'RESOLUCIONES',
+            url: 'www.google.com',
+            estilo: 'resoluciones-info',
+            descripcion: 'Aplicación creada para cumplir algun objetivo en especifico'
+          },
+          {
+            nombre: 'OIKOS',
+            url: 'www.google.com',
+            estilo: 'oikos-info',
+            descripcion: 'Aplicación creada para cumplir algun objetivo en especifico'
+          },
+          {
+            nombre: 'SISIFO',
+            url: 'www.google.com',
+            estilo: 'sisifo-info',
+            descripcion: 'Aplicación creada para cumplir algun objetivo en especifico'
+          },
+          {
+            nombre: 'TEMIS',
+            url: 'www.google.com',
+            estilo: 'temis-info',
+            descripcion: 'Aplicación creada para cumplir algun objetivo en especifico'
+          }
+        ]
+      },
+      {
+        nombre: 'Gestión Académica',
+        color: '#15485E',
+        aplicaciones: [
+          {
+            nombre: 'JANO',
+            url: 'www.google.com',
+            estilo: 'jano-info',
+            descripcion: 'Aplicación creada para cumplir algun objetivo en especifico'
+          },
+          {
+            nombre: 'KYRON',
+            url: 'www.google.com',
+            estilo: 'kyron-info',
+            descripcion: 'Aplicación creada para cumplir algun objetivo en especifico'
+          },
+          {
+            nombre: 'POLUX',
+            url: 'www.google.com',
+            estilo: 'polux-info',
+            descripcion: 'Aplicación creada para cumplir algun objetivo en especifico'
+          },
+          {
+            nombre: 'SGA',
+            url: 'www.google.com',
+            estilo: 'sga-info',
+            descripcion: 'Aplicación creada para cumplir algun objetivo en especifico'
+          }
+        ]
+      },
+      {
+        nombre: 'Gestión Financiera',
+        color: '#DE9E0F',
+        aplicaciones: [
+          {
+            nombre: 'KRONOS',
+            url: 'www.google.com',
+            estilo: 'kronos-info',
+            descripcion: 'Aplicación creada para cumplir algun objetivo en especifico'
+          },
+          {
+            nombre: 'TITAN',
+            url: 'www.google.com',
+            estilo: 'titan-info',
+            descripcion: 'Aplicación creada para cumplir algun objetivo en especifico'
+          }
+        ]
+      },
+      {
+        nombre: 'Voto Electrónico',
+        color: '#397A18',
+        aplicaciones: [
+          {
+            nombre: 'PERSEO',
+            url: 'www.google.com',
+            estilo: 'perseo-info',
+            descripcion: 'Aplicación creada para cumplir algun objetivo en especifico'
+          }
+        ]
+      }
     ]
-};
-
+  };
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
