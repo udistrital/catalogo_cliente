@@ -16,15 +16,19 @@ export class HeaderComponent implements OnInit , AfterViewInit {
     }
   }
   // tslint:disable-next-line: member-ordering
+  noNotify = '';
+  // tslint:disable-next-line: member-ordering
   username = '';
   // tslint:disable-next-line: member-ordering
   liveTokenValue: boolean = false;
+
   private autenticacion = new ImplicitAutenticationService;
   constructor(public notificacionService: NotioasService, public appFilter: AppFilterService) { }
 
-
   ngOnInit() {
     this.liveToken();
+    this.notificacionService.noNotify$
+    .subscribe((noNotify: number) => (this.noNotify = noNotify + ''));
   }
   liveToken() {
     if (this.isLoggin()) {
