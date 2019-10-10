@@ -7,42 +7,50 @@
                 {
                     "nombre": "AGORA",
                     "url": "https://www.google.com",
-                    "estilo": "agora"
+                    "estilo": "agora",
+                    "descripcion": "Aplicacion creada para cumplir algun objetivo en especifico"
                 },
                 {
                     "nombre": "ARGO",
                     "url": "www.google.com",
-                    "estilo": "argo"
+                    "estilo": "argo",
+                    "descripcion": "Aplicacion creada para cumplir algun objetivo en especifico"
                 },
                 {
                     "nombre": "ARKA",
                     "url": "www.google.com",
-                    "estilo": "arka"
+                    "estilo": "arka",
+                    "descripcion": "Aplicacion creada para cumplir algun objetivo en especifico"
                 },
                 {
                     "nombre": "CUMPLIDOS",
                     "url": "www.google.com",
-                    "estilo": "cumplidos"
+                    "estilo": "cumplidos",
+                    "descripcion": "Aplicacion creada para cumplir algun objetivo en especifico"
                 },
                 {
                     "nombre": "RESOLUCIONES",
                     "url": "www.google.com",
-                    "estilo": "resoluciones"
+                    "estilo": "resoluciones",
+                    "descripcion": "Aplicacion creada para cumplir algun objetivo en especifico"
                 },
                 {
                     "nombre": "OIKOS",
                     "url": "www.google.com",
-                    "estilo": "oikos"
+                    "estilo": "oikos",
+                    "descripcion": "Aplicacion creada para cumplir algun objetivo en especifico"
                 },
                 {
                     "nombre": "SISIFO",
                     "url": "www.google.com",
-                    "estilo": "sisifo"
+                    "estilo": "sisifo",
+                    "descripcion": "Aplicacion creada para cumplir algun objetivo en especifico"
                 },
                 {
                     "nombre": "TEMIS",
                     "url": "www.google.com",
-                    "estilo": "temis"
+                    "estilo": "temis",
+                    "descripcion": "Aplicacion creada para cumplir algun objetivo en especifico"
                 }
             ]
         },
@@ -53,22 +61,26 @@
                 {
                     "nombre": "JANO",
                     "url": "www.google.com",
-                    "estilo": "jano"
+                    "estilo": "jano",
+                    "descripcion": "Aplicacion creada para cumplir algun objetivo en especifico"
                 },
                 {
                     "nombre": "KYRON",
                     "url": "www.google.com",
-                    "estilo": "kyron"
+                    "estilo": "kyron",
+                    "descripcion": "Aplicacion creada para cumplir algun objetivo en especifico"
                 },
                 {
                     "nombre": "POLUX",
                     "url": "www.google.com",
-                    "estilo": "polux"
+                    "estilo": "polux",
+                    "descripcion": "Aplicacion creada para cumplir algun objetivo en especifico"
                 },
                 {
                     "nombre": "SGA",
                     "url": "www.google.com",
-                    "estilo": "sga"
+                    "estilo": "sga",
+                    "descripcion": "Aplicacion creada para cumplir algun objetivo en especifico"
                 }
             ]
         },
@@ -79,12 +91,14 @@
                 {
                     "nombre": "KRONOS",
                     "url": "www.google.com",
-                    "estilo": "kronos"
+                    "estilo": "kronos",
+                    "descripcion": "Aplicacion creada para cumplir algun objetivo en especifico"
                 },
                 {
                     "nombre": "TITAN",
                     "url": "www.google.com",
-                    "estilo": "titan"
+                    "estilo": "titan",
+                    "descripcion": "Aplicacion creada para cumplir algun objetivo en especifico"
                 }
             ]
         },
@@ -95,7 +109,8 @@
                 {
                     "nombre": "PERSEO",
                     "url": "www.google.com",
-                    "estilo": "perseo"
+                    "estilo": "perseo",
+                    "descripcion": "Aplicacion creada para cumplir algun objetivo en especifico"
                 }
             ]
         }
