@@ -11,8 +11,12 @@
       </div>
       <div class="button-container">
           <div class="button-div">
-            <button class="button-header" (click)="toggleNotifications()">
+
+            <button class="button-header notification" (click)="toggleNotifications()">
               <i class="fa fa-bell-o"></i>
+              <div class="badge1" *ngIf="noNotify" >
+                {{ noNotify }}
+              </div>
             </button>
           </div>
             <div *ngIf="!liveTokenValue,then thenBlock else elseBlock" class="button-div"></div>
