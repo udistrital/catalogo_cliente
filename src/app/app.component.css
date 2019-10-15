@@ -76,6 +76,7 @@
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 100px;
+    padding-top: 86px;
 }
 
 .card {
@@ -172,12 +173,30 @@
     }
 }
 
+@media screen and (max-width: 823px) {
+    .container-aplicativos {
+        margin-bottom: 134px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container-aplicativos {
+        margin-bottom: 134px;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .card-title {
         font-size: 20px;
     }
     .card-app-image {
         width: 75px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .container-aplicativos {
+        margin-bottom: 224px;
     }
 }
 
