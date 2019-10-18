@@ -60,7 +60,8 @@
   }
 
   .flip-card-text{
-    margin: 0;
+    margin: 2px;
+    font-size: 14px;
   }
 
 /*Estilos para las cards contenedoras de aplicaciones*/
