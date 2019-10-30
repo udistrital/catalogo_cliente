@@ -24,7 +24,7 @@
         "moment": "^2.24.0",
         "ng-packagr": "^5.5.1",
         "ngx-moment": "^3.4.0",
-        "notioas": "0.1.5",
+        "utilidades-core": "file:dist/utilidades-core",
         "oidc-auth": "^0.5.0",
         "rxjs": "~6.4.0",
         "tsickle": "^0.37.0",

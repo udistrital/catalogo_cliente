@@ -1,6 +1,6 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { ImplicitAutenticationService } from '../service/implicit-autentication.service';
-import { NotioasService } from 'notioas';
+import { NotioasService, MenuAplicacionesService, UtilidadesCoreService } from 'utilidades-core';
 import { environment } from '../../environments/environment';
 import { AppFilterService } from '../service/app-filter.service';
 
@@ -12,7 +12,7 @@ import { AppFilterService } from '../service/app-filter.service';
 export class HeaderComponent implements OnInit , AfterViewInit {
   ngAfterViewInit(): void {
     if (this.autenticacion.live()) {
-      this.notificacionService.initLib(environment.CONFIGURACION_SERVICE, environment.NOTIFICACION_SERVICE)
+      this.utilidadesService.initLib(environment)
     }
   }
   // tslint:disable-next-line: member-ordering
@@ -23,7 +23,11 @@ export class HeaderComponent implements OnInit , AfterViewInit {
   liveTokenValue: boolean = false;
 
   private autenticacion = new ImplicitAutenticationService;
-  constructor(public notificacionService: NotioasService, public appFilter: AppFilterService) { }
+  constructor(
+    public notificacionService: NotioasService,
+    private utilidadesService: UtilidadesCoreService,
+    private menuAplicacionesService: MenuAplicacionesService, 
+    public appFilter: AppFilterService) { }
 
   ngOnInit() {
     this.liveToken();
@@ -57,5 +61,5 @@ export class HeaderComponent implements OnInit , AfterViewInit {
   toggleNotifications(): boolean {
     this.notificacionService.toogleMenuNotify();
     return false;
-}
+  }
 }
