@@ -1,6 +1,6 @@
 <app-header></app-header>
 <div class="container-aplicativos">
-    <article *ngFor="let categoria of menuService.eventFilter$ | async" class="card">
+    <article *ngFor="let categoria of categorias" class="card">
         <div class="card-text-app-container" [ngStyle]="{'background-color': categoria.color}">
             <h3 class="card-title" id="categoria-title">{{categoria.nombre}}</h3>
         </div>

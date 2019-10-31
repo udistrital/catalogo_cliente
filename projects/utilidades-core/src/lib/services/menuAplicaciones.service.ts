@@ -63,7 +63,9 @@ export class MenuAplicacionesService {
     }
 
     public getAplication(): any {
-
+        const id_token = localStorage.getItem('id_token');
+        const access_token = localStorage.getItem('access_token');
+        if (id_token !== null && access_token !== null) {
         this.configuracionService.post('aplicacion_rol/aplicacion_rol', this.roles)
             .subscribe((data: any) => {
                 let nuevasAplicaciones = this.categorias.map((categoria: any) => {
@@ -78,6 +80,7 @@ export class MenuAplicacionesService {
                 this.dataFilterSubject.next(nuevasAplicaciones);
             });
         return this.eventFilter$;
+        }
     }
 
     existe(nombre: string, array: any) {

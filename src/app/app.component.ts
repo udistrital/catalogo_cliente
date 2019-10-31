@@ -8,11 +8,15 @@ import { environment } from './../environments/environment';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(private utilidades: UtilidadesCoreService, public menuService: MenuAplicacionesService) {
-    this.utilidades.initLib(environment);
-  }
+  categorias = [];
 
-  ngAfterViewInit() {
+  constructor(private utilidades: UtilidadesCoreService, private menuService: MenuAplicacionesService) {
+    this.utilidades.initLib(environment);
+
+    this.menuService.eventFilter$.subscribe((categorias: any) => { 
+      console.info(categorias);
+      this.categorias = categorias
+    });
   }
 
   redirect(link) {
