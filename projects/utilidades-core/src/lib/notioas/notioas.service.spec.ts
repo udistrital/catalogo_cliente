@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { AppFilterService } from './app-filter.service';
+import { NotioasService } from './notioas.service';
 
-describe('AppFilterService', () => {
+describe('NotioasService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: AppFilterService = TestBed.get(AppFilterService);
+    const service: NotioasService = TestBed.get(NotioasService);
     expect(service).toBeTruthy();
   });
 });
