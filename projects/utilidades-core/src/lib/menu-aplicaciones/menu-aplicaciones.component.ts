@@ -10,8 +10,12 @@ import { Router } from '@angular/router';
 })
 export class MenuAplicacionesComponent implements OnInit {
   activo: any;
+  categorias = []
   constructor( public menuService: MenuAplicacionesService, public notioasService: NotioasService, private router: Router) {
-
+    this.menuService.eventFilter$
+    .subscribe((categorias: any) => {
+      this.categorias = categorias;
+    })
   }
 
   redirect(link) {

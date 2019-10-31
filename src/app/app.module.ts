@@ -15,6 +15,7 @@ import { NotioasModule,  MenuAplicacionesModule, UtilidadesCoreModule } from 'ut
   ],
   imports: [
     NotioasModule,
+    UtilidadesCoreModule,
     BrowserModule
   ],
   providers: [

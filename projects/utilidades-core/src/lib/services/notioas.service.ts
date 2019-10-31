@@ -155,7 +155,10 @@ export class NotioasService {
     }
 
     queryNotification() {
-        this.confService.get('notificacion_estado_usuario?query=Usuario:' + this.user + ',Activo:true&sortby=notificacion&order=asc&limit=-1')
+        const id_token = localStorage.getItem('id_token');
+        const access_token = localStorage.getItem('access_token');
+        if (id_token !== null && access_token !== null) {
+            this.confService.get('notificacion_estado_usuario?query=Usuario:' + this.user + ',Activo:true&sortby=notificacion&order=asc&limit=-1')
             .subscribe((resp: any) => {
                 if (resp !== null) {
                     this.notificacion_estado_usuario = resp
@@ -179,6 +182,7 @@ export class NotioasService {
                 }
 
             });
+        }
 
     }
 
