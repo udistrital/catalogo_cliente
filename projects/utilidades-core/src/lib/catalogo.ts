@@ -52,6 +52,12 @@ export const catalogo = {
                     estilo: 'temis-info',
                     descripcion: 'Apoyo en la definición y cálculo de las cuotas partes pensionales con entidades externas',
                 },
+                {
+                    nombre: 'PERSEO',
+                    url: 'https://www.google.com',
+                    estilo: 'perseo-info',
+                    descripcion: 'Permitir el desarrollo de procesos electorales dentro de la universidad de forma digital',
+                },
             ],
         },
         {
@@ -103,14 +109,44 @@ export const catalogo = {
             ],
         },
         {
-            nombre: 'Voto Electrónico',
+            nombre: 'Analíticos',
             color: '#397A18',
             aplicaciones: [
                 {
-                    nombre: 'PERSEO',
+                    nombre: 'SPAGOBI',
                     url: 'https://www.google.com',
-                    estilo: 'perseo-info',
-                    descripcion: 'Permitir el desarrollo de procesos electorales dentro de la universidad de forma digital',
+                    estilo: 'spagobi-info',
+                    descripcion: 'Una breve descripción acerca de spagobi',
+                },
+                {
+                    nombre: 'CIRENE',
+                    url: 'https://www.google.com',
+                    estilo: 'cirene-info',
+                    descripcion: 'Una breve descripción acerca de cirene',
+                },
+            ],
+        },
+        {
+            nombre: 'Externas',
+            color: '#2b3643',
+            aplicaciones: [
+                {
+                    nombre: 'CAMPUS',
+                    url: 'https://www.google.com',
+                    estilo: 'campus-info',
+                    descripcion: 'Campus Virtual para postgrados',
+                },
+                {
+                    nombre: 'SICIUD',
+                    url: 'https://www.google.com',
+                    estilo: 'siciud-info',
+                    descripcion: 'Una breve descripción acerca de sisiud',
+                },
+                {
+                    nombre: 'APEA',
+                    url: 'https://www.google.com',
+                    estilo: 'apea-info',
+                    descripcion: 'Una breve descripción acerca de apea',
                 },
             ],
         },
@@ -219,14 +255,44 @@ export const catalogo = {
             ],
         },
         {
-            nombre: 'Voto Electrónico',
+            nombre: 'Analíticos',
             color: '#397A18',
             aplicaciones: [
                 {
-                    nombre: 'PERSEO',
+                    nombre: 'SPAGOBI',
                     url: 'https://www.google.com',
-                    estilo: 'perseo-info',
-                    descripcion: 'Permitir el desarrollo de procesos electorales dentro de la universidad de forma digital',
+                    estilo: 'spagobi-info',
+                    descripcion: 'Una breve descripción acerca de spagobi',
+                },
+                {
+                    nombre: 'CIRENE',
+                    url: 'https://www.google.com',
+                    estilo: 'cirene-info',
+                    descripcion: 'Una breve descripción acerca de cirene',
+                },
+            ],
+        },
+        {
+            nombre: 'Externas',
+            color: '#2b3643',
+            aplicaciones: [
+                {
+                    nombre: 'CAMPUS',
+                    url: 'https://www.google.com',
+                    estilo: 'campus-info',
+                    descripcion: 'Campus Virtual para postgrados',
+                },
+                {
+                    nombre: 'SICIUD',
+                    url: 'https://www.google.com',
+                    estilo: 'siciud-info',
+                    descripcion: 'Una breve descripción acerca de sisiud',
+                },
+                {
+                    nombre: 'APEA',
+                    url: 'https://www.google.com',
+                    estilo: 'apea-info',
+                    descripcion: 'Una breve descripción acerca de apea',
                 },
             ],
         },

@@ -1,20 +1,14 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { ImplicitAutenticationService } from '../service/implicit-autentication.service';
-import { NotioasService, MenuAplicacionesService, UtilidadesCoreService } from 'utilidades-core';
+import { NotioasService } from 'utilidades-core';
 import { environment } from '../../environments/environment';
-import { AppFilterService } from '../service/app-filter.service';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent implements OnInit , AfterViewInit {
-  ngAfterViewInit(): void {
-    if (this.autenticacion.live()) {
-      this.utilidadesService.initLib(environment)
-    }
-  }
+export class HeaderComponent implements OnInit {
   // tslint:disable-next-line: member-ordering
   noNotify = '';
   // tslint:disable-next-line: member-ordering
@@ -23,11 +17,7 @@ export class HeaderComponent implements OnInit , AfterViewInit {
   liveTokenValue: boolean = false;
 
   private autenticacion = new ImplicitAutenticationService;
-  constructor(
-    public notificacionService: NotioasService,
-    private utilidadesService: UtilidadesCoreService,
-    private menuAplicacionesService: MenuAplicacionesService, 
-    public appFilter: AppFilterService) { }
+  constructor( public notificacionService: NotioasService ) { }
 
   ngOnInit() {
     this.liveToken();
@@ -36,11 +26,9 @@ export class HeaderComponent implements OnInit , AfterViewInit {
   }
   liveToken() {
     if (this.isLoggin()) {
-      this.appFilter.getAplication();
       this.liveTokenValue = true;
       this.username = (this.autenticacion.getPayload()).sub;
     } else {
-      this.appFilter.getAllAplications();
     }
     return false;
   }

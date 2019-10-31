@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { AppFilterService } from './service/app-filter.service';
+import { UtilidadesCoreService, MenuAplicacionesService } from 'utilidades-core';
+import { environment } from './../environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +8,11 @@ import { AppFilterService } from './service/app-filter.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(public appFilter: AppFilterService) {
+  constructor(private utilidades: UtilidadesCoreService, public menuService: MenuAplicacionesService) {
+    this.utilidades.initLib(environment);
+  }
+
+  ngAfterViewInit() {
   }
 
   redirect(link) {

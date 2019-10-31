@@ -57,8 +57,6 @@ export class MenuAplicacionesService {
 
     init(categorias: any) {
         console.info('...Init lib menu');
-        console.info(categorias);
-
         this.categorias = categorias;
         this.dataFilterSubject.next(this.categorias);
         this.getAplication();

@@ -25,13 +25,10 @@ export class ImplicitAutenticationService {
   }
 
   public logout() {
-      
        auth.logout();
   }
 
-
   getPayload() {
-
           return auth.getPayload();
      
   }

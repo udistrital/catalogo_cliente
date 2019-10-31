@@ -6,7 +6,6 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { ImplicitAutenticationService } from './service/implicit-autentication.service';
 import { NotioasModule,  MenuAplicacionesModule, UtilidadesCoreModule } from 'utilidades-core';
-import { AppFilterService } from './service/app-filter.service';
 
 @NgModule({
   declarations: [
@@ -14,12 +13,12 @@ import { AppFilterService } from './service/app-filter.service';
     FooterComponent,
     HeaderComponent
   ],
-  imports: [NotioasModule,MenuAplicacionesModule,UtilidadesCoreModule,
+  imports: [
+    NotioasModule,
     BrowserModule
   ],
   providers: [
-    ImplicitAutenticationService,
-    AppFilterService
+    ImplicitAutenticationService
   ],
   bootstrap: [AppComponent]
 })
