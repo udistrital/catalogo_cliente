@@ -35,12 +35,16 @@ steps:
   # upload app.zip to s3 bucket for CodePipline
   - name: publish_s3
     image: plugins/s3
-    secrets: [ aws_access_key_id, aws_secret_access_key ]
-    region: "us-east-1"    
-    bucket: "cliente-pruebas"
-    source: dist/**/*
-    target: /pruebas${DRONE_REPO_NAME%%_cliente}.portaloas.udistrital.edu.co
-    strip_prefix: dist/
+    settings:
+      access_key:
+        from_secret: aws_access_key_id
+      secret_key:
+        from_secret: aws_secret_access_key
+      region: "us-east-1"    
+      bucket: "cliente-pruebas"
+      source: dist/**/*
+      target: /pruebas${DRONE_REPO_NAME%%_cliente}.portaloas.udistrital.edu.co
+      strip_prefix: dist/
     when:
       branch: [test]
       event: [push, pull_request] 
@@ -48,12 +52,16 @@ steps:
   # upload app.zip to s3 bucket for CodePipline
   - name: publish_s3_prod
     image: plugins/s3
-    secrets: [ aws_access_key_id, aws_secret_access_key ]
-    region: "us-east-1"    
-    bucket: "cliente-prod"
-    source: dist/**/*
-    target: /${DRONE_REPO_NAME%%_cliente}.portaloas.udistrital.edu.co
-    strip_prefix: dist/
+    settings:
+      access_key:
+        from_secret: aws_access_key_id
+      secret_key:
+        from_secret: aws_secret_access_key
+      region: "us-east-1"    
+      bucket: "cliente-prod"
+      source: dist/**/*
+      target: /${DRONE_REPO_NAME%%_cliente}.portaloas.udistrital.edu.co
+      strip_prefix: dist/
     when:
       branch: [master]
       event: [push, pull_request] 
