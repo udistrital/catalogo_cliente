@@ -21,7 +21,7 @@ steps:
       branch: [test]
       event: [push, pull_request]
       
-  - name: nodejs  
+  - name: nodejsprod
     image: node:12.6.0
     commands:
      - node --version
