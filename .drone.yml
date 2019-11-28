@@ -69,16 +69,20 @@ steps:
   #Notify results to telegram
   - name: notify_telegram
     image: appleboy/drone-telegram
-    secrets: [ telegram_token, telegram_to ]
-    format: html
-    message: >
-      {{#success build.status}}
-        <code>{{repo.owner}}/{{repo.name}}</code> <a href="{{build.link}}">SUCCESS</a>
-        <code>{{commit.branch}}</code>@<a href="{{commit.link}}">{{truncate commit.sha 7}}</a>
-      {{else}}
-        <code>{{repo.owner}}/{{repo.name}}</code> <a href="{{build.link}}">FAILURE</a>
-        <code>{{commit.branch}}</code>@<a href="{{commit.link}}">{{truncate commit.sha 7}}</a>
-      {{/success}}
+    settings:
+      telegram_token:
+        from_secret: telegram_token
+      telegram_to:
+        from_secret: telegram_to
+      format: html
+      message: >
+        {{#success build.status}}
+          <code>{{repo.owner}}/{{repo.name}}</code> <a href="{{build.link}}">SUCCESS</a>
+          <code>{{commit.branch}}</code>@<a href="{{commit.link}}">{{truncate commit.sha 7}}</a>
+        {{else}}
+          <code>{{repo.owner}}/{{repo.name}}</code> <a href="{{build.link}}">FAILURE</a>
+          <code>{{commit.branch}}</code>@<a href="{{commit.link}}">{{truncate commit.sha 7}}</a>
+        {{/success}}
     when:
       status: [success, failure]
       branch: [master, test]
