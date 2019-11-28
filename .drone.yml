@@ -70,9 +70,9 @@ steps:
   - name: notify_telegram
     image: appleboy/drone-telegram
     settings:
-      telegram_token:
+      token:
         from_secret: telegram_token
-      telegram_to:
+      to:
         from_secret: telegram_to
       format: html
       message: >
