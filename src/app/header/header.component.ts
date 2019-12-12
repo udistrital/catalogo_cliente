@@ -1,5 +1,5 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
-import { ImplicitAutenticationService } from '../service/implicit-autentication.service';
+
 import { NotioasService } from 'utilidades-core';
 import { environment } from '../../environments/environment';
 
@@ -16,7 +16,7 @@ export class HeaderComponent implements OnInit {
   // tslint:disable-next-line: member-ordering
   liveTokenValue: boolean = false;
 
-  private autenticacion = new ImplicitAutenticationService;
+  
   constructor( public notificacionService: NotioasService ) { }
 
   ngOnInit() {
@@ -27,7 +27,7 @@ export class HeaderComponent implements OnInit {
   liveToken() {
     if (this.isLoggin()) {
       this.liveTokenValue = true;
-      this.username = (this.autenticacion.getPayload()).sub;
+      this.username = (window.Auth.getPayload()).sub;
     } else {
     }
     return false;
@@ -35,15 +35,15 @@ export class HeaderComponent implements OnInit {
 
 
   isLoggin() {
-    return this.autenticacion.live();
+    return window.Auth.live();
   }
 
   login() {
-    this.autenticacion.login();
+    window.Auth.login(false);
   }
 
   logout() {
-    this.autenticacion.logout();
+    window.Auth.logout();
   }
 
   toggleNotifications(): boolean {
