@@ -9,13 +9,5 @@ if (environment.production) {
   enableProdMode();
 }
 
-declare global {
-  interface Window { Auth: any; }
-}
-
-window.Auth = window.Auth || {};
-window.Auth = new ImplicitAutenticationService;
-window.Auth.init(environment.TOKEN);
-
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));

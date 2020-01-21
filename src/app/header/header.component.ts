@@ -1,6 +1,6 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 
-import { NotioasService } from 'utilidades-core';
+import { NotioasService, ImplicitAutenticationService } from 'utilidades-core';
 import { environment } from '../../environments/environment';
 
 @Component({
@@ -15,14 +15,19 @@ export class HeaderComponent implements OnInit {
   username = '';
   // tslint:disable-next-line: member-ordering
   liveTokenValue: boolean = false;
+  user: {email: ''};
 
   
-  constructor( public notificacionService: NotioasService ) { }
+  constructor( public notificacionService: NotioasService,
+               public autenticacionService: ImplicitAutenticationService) { }
 
   ngOnInit() {
     this.liveToken();
     this.notificacionService.noNotify$
     .subscribe((noNotify: number) => (this.noNotify = noNotify + ''));
+
+    this.autenticacionService.user$
+    .subscribe((user: any) => {this.user = user})
   }
   liveToken() {
     if (this.isLoggin()) {

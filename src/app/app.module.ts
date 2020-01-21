@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
-import { NotioasModule,  MenuAplicacionesModule, UtilidadesCoreModule, ImplicitAutenticationService } from 'utilidades-core';
+import { NotioasModule,  MenuAplicacionesModule, UtilidadesCoreModule } from 'utilidades-core';
 
 
 @NgModule({
@@ -16,9 +16,6 @@ import { NotioasModule,  MenuAplicacionesModule, UtilidadesCoreModule, ImplicitA
     NotioasModule,
     UtilidadesCoreModule,
     BrowserModule
-  ],
-  providers: [
-    ImplicitAutenticationService
   ],
   bootstrap: [AppComponent]
 })
