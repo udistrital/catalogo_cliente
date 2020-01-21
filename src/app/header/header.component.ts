@@ -15,7 +15,7 @@ export class HeaderComponent implements OnInit {
   username = '';
   // tslint:disable-next-line: member-ordering
   liveTokenValue: boolean = false;
-  user: {email: ''};
+  user: {email: '', user: ''};
 
   
   constructor( public notificacionService: NotioasService,
